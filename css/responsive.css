@@ -1,0 +1,130 @@
+@media only screen and (max-width: 1024px) {
+    /* Algemene responsive elementen */
+
+    /* Header */ 
+    header {
+        flex-direction: column;
+    }
+
+    nav .menu > li {
+        display: block;
+        padding: 5px 0;
+    }
+
+    nav .menu > li > .submenu {
+        position: static;
+        background-color: transparent;
+        padding: 0;
+        width: auto;
+    }
+
+    /* Intro sectie */
+    .intro h1 {
+        font-size: calc(2em + 1vw);
+    }
+
+    /*Specifieke pagina's*/
+
+    /* Responsive index pagina */
+    .index .hero {
+        height: 300px;
+    }
+
+    .index .hero h1 {
+        font-size: calc(2em + 4vw);
+    }
+
+    .index .hero p, .intro p {
+        font-size: calc(1em + 1vw);
+    }
+
+    .index .card-container {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .index .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    /* Responsive characters pagina */
+    .characters .item {
+        flex-direction: column;
+    }
+
+    .characters .grid-row-uneven,
+    .characters .grid-row-even {
+        flex-direction: column;
+    }
+
+    .characters img {
+        width: 100%;
+    }
+
+    /* Responsive locations pagina */
+    .location {
+        flex-direction: column;
+    }
+
+    .location img {
+        margin-right: 0;
+        margin-bottom: 20px;
+        width: 100%;
+        height: 300px;
+    }
+
+    .location-info {
+        margin: 0;
+        text-align: center;
+    }
+
+    .location-details {
+        width: 100%;
+    }
+
+    .location-details .text {
+        width: 100%;
+    }
+
+    .location-details .image {
+        width: 100%;
+    }
+
+    /* Responsive gallery pagina */
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 1fr;
+    }
+
+    .gallery .img-wrapper,
+    .gallery .img-wrapper.large {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    /* Responsive store pagina */
+    .filters button {
+        width: 100%;
+    }
+
+    .products .product-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    }
+
+    .filters button {
+        margin: 3px 0;
+    }
+
+    /* Responsive contact pagina */
+    .form-container {
+        margin: 20px;
+        max-width: 100%;
+        flex-direction: column;
+    }
+
+    .form-section {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
